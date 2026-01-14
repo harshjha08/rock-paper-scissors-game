@@ -88,27 +88,27 @@ exitBtn.addEventListener("click", () => {
 // random pic genration for user
 let randomUserPic = () => {
     let userPic = [
-"images/boy1.jpg", 
-"images/boy2.jpg",
-"images/boy3.jpg",
-"images/boy4.jpg",
-"images/boy5.jpeg",
-"images/boy6.jpg",
-"images/boy7.jpg",
-"images/boy8.jpeg",
-"images/boy9.jpeg",
-"images/boy10.jpg",
-"images/boy11.jpg",
-"images/boy12.jpg",
-"images/boy13.jpg",
-"images/girl1.svg",
-"images/girl2.webp",
-"images/girl3.jpeg",
-"images/girl4.jpg",
-"images/girl5.jpg",
-"images/girl6.jpg",
-"images/girl7.webp", 
-"images/girl8.jpeg"
+"boy1.jpg", 
+"boy2.jpg",
+"boy3.jpg",
+"boy4.jpg",
+"boy5.jpeg",
+"boy6.jpg",
+"boy7.jpg",
+"boy8.jpeg",
+"boy9.jpeg",
+"boy10.jpg",
+"boy11.jpg",
+"boy12.jpg",
+"boy13.jpg",
+"girl1.svg",
+"girl2.webp",
+"girl3.jpeg",
+"girl4.jpg",
+"girl5.jpg",
+"girl6.jpg",
+"girl7.webp", 
+"girl8.jpeg"
      ];
     let userPicIdx = Math.floor(Math.random() * 20); 
     return userPic[userPicIdx];
@@ -116,11 +116,11 @@ let randomUserPic = () => {
 // random pic genration for computer
 let randomComPic = () => {
     let compPic = [
-"images/comp1.webp",
-"images/comp2.jpg",
-"images/comp3.jpg",
-"images/comp4.webp",
-"images/comp5.jpg"
+"comp1.webp",
+"comp2.jpg",
+"comp3.jpg",
+"comp4.webp",
+"comp5.jpg"
     ];
     let compPicIdx = Math.floor(Math.random() * 4);
     return compPic[compPicIdx];
