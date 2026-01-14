@@ -1,0 +1,282 @@
+/* ===============================
+   MOBILE-FIRST REDESIGN
+   =============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Background video */
+.bg-video {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* ===============================
+   LANDING / USER INPUT SCREEN
+   =============================== */
+
+.about-user-box {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.user-details-box {
+    width: 100%;
+    max-width: 380px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+}
+
+.user-details-box p {
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+}
+
+.user-details-box input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid orange;
+}
+
+#submitUserBtn {
+    width: 100%;
+    height: 45px;
+    border-radius: 12px;
+    background: orangered;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+}
+
+/* ===============================
+   MAIN GAME CONTAINER
+   =============================== */
+
+.game-container {
+    min-height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 30px;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    max-width: 380px;
+    height: 55px;
+    border-radius: 14px;
+    margin-top: 10px;
+    background: rgb(16, 16, 75);
+    border: 2px solid goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* ===============================
+   CHOICES SECTION
+   =============================== */
+
+.choices {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.choice {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+/* ===============================
+   SCORE BOARD
+   =============================== */
+
+.score-board {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.user-score,
+.comp-score {
+    flex: 1;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(6px);
+    border-radius: 14px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 4px solid rgb(227, 194, 28);
+}
+
+.compImgbox,
+.userImgbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.compImgbox img,
+.userImgbox img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+#user-score,
+#comp-score {
+    font-size: 36px;
+    color: rgb(244, 20, 20);
+}
+
+/* ===============================
+   BUTTONS
+   =============================== */
+
+.button-box {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.button-box button {
+    flex: 1;
+    height: 42px;
+    border-radius: 20px;
+    background: orangered;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+}
+
+/* ===============================
+   MESSAGE BOX
+   =============================== */
+
+.msg-box {
+    margin-top: 25px;
+    width: 100%;
+    max-width: 380px;
+}
+
+#msg-box {
+    text-align: center;
+    font-size: 18px;
+    background: rgb(11, 11, 73);
+    color: #fff;
+    padding: 12px;
+    border-radius: 14px;
+}
+
+/* ===============================
+   END GAME SCREEN
+   =============================== */
+
+.end-game-container {
+    width: 100%;
+    max-width: 380px;
+    margin: 20px auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+}
+
+#finalMsg {
+    font-size: 26px;
+    color: green;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#txt {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.final-score-board {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.final-user-score,
+.final-comp-score {
+    width: 100%;
+    background: linear-gradient(45deg, #ee1e41, #f50f48, #e9167c);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.end-box-btns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+#playAgain,
+#gameShutdown {
+    width: 100%;
+    height: 45px;
+    border-radius: 12px;
+    background: orange;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+}

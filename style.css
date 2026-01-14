@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game-container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.bg-video{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+.header{
+    background: rgb(16, 16, 75);
+    color: #fff;
+    height: 70px;
+    width: 50%;
+    border-radius: 20%;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid goldenrod;
+    /* box-shadow: 0px 10px 0px rgba(40, 34, 34, 0.863); */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1), 0 20px, 30px, rgba(0,0,0,0.15);
+    font-size: 20px;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+.choice{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+}
+.choice:hover{
+    background: rgb(8, 8, 59);
+}
+.choice img{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    font-size: 30px;
+}
+.user-score,
+.comp-score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    border-top: 4px solid rgb(227, 194, 28);
+    height: 140px;
+    min-width: 200px;
+    max-width: max-content;
+    padding: 15px;
+}
+#user-score,
+#comp-score{
+    font-size: 60px;
+    color: rgb(244, 20, 20);
+   
+}
+.button-box{
+    width: 300px;
+    height: 40px;
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.button-box button{
+    height: 100%;
+    width: 50%;
+    background: orangered;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+}
+#msg-box{
+    color: #fff;
+    background: rgb(11, 11, 73);
+    font-size: 40px;
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 20px;
+}
+.end-game-container{
+    height: 600px;
+    text-align: center;
+    width: 60%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px rgb(64, 53, 53);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    margin-left: 300px;
+}
+.final-comp-score,
+.final-user-score{
+    background: linear-gradient(45deg, #ee1e41, #f50f48, #e9167c);
+    padding: 20px;
+    color: rgb(43, 32, 10);
+    min-width: 300px ;
+    height: 150px;
+    border: 2px solid green;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+#finalMsg{
+    font-size: 50px;
+    color: green;
+    margin-bottom: 40px;
+}
+.final-score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: #ee1e41;
+    font-size: 20px;
+    height: 200px;
+    padding: 30px;
+    font-size: 30px;
+    margin-top: 60px;
+}
+#txt{
+    font-size: 30px;
+}
+.end-box-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    gap: 30px;
+    width: 100%;
+    margin-top: 10px;
+}
+#playAgain,
+#gameShutdown{
+    padding: 10px;
+    width: 250px;
+    font-size: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: none;
+    background: orange;
+    color: #fff;
+    outline: none;
+    box-shadow: 10px 0px 20px rgb(43, 25, 25);
+}
+.about-user-box{
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-details-box{
+    border-radius: 20px;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+     box-shadow: 0px 0px 10px rgb(64, 53, 53);
+    backdrop-filter: blur(2px);
+    /* justify-content: center; */
+    align-items: center;
+}
+.user-details-box p{
+    font-size: 35px;
+}
+.user-details-box input{
+    padding: 10px;
+    width: 350px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid orange;
+}
+#submitUserBtn{
+    width: 350px;
+    height: 35px;
+    margin-top: 30px;
+    border-radius: 5px;
+    color: #fff;
+    background: orangered;
+    font-size: 20px;
+}
+.compImgbox,
+.userImgbox{
+    display: flex;
+    gap: 10px;
+    
+}
+.compImgbox img,
+.userImgbox img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}

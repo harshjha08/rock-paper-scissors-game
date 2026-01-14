@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" id="dynamic-style">
+    <link rel="icon" href="favicon.ico">
+    <title>Rock paper Scissor</title>
+</head>
+<body>
+    <!--this video tag is used for game background-->
+     <video class="bg-video" autoplay muted loop playsinline>
+            <source src="bg-background.mp4" type="video/mp4">
+     </video>
+     <!--about user box is used for landing interface to get username and rounds-->
+        <div class="about-user-box">
+            <div class="user-details-box">
+            <p>Welcome to Rock Paper Scissor</p>
+            <input type="text" id="userNameInput" placeholder="Enter your name" autocomplete="off" required>
+            <input type="text" id="gameTurn" placeholder="Enter Rounds to play" autocomplete="off" required>
+            <button id="submitUserBtn">Play</button>
+            </div>
+        </div>
+        <!--This is main game container which is used for real game interface-->
+    <div class="game-container">
+       <!--heading of the game-->
+        <div class="header">
+            <p id="heading">Rock Paper Scissor</p>
+        </div>
+        <!--Div choices is storing three choice rock paper scissor-->
+        <div class="choices">
+            <div class="choice" id="rock">
+                <img src="images/rock.png">
+            </div>
+            <div class="choice" id="paper">
+                <img src="images/paper.png">
+            </div>
+            <div class="choice" id="Scissor">
+                <img src="images/scissors.png">
+            </div>
+        </div>
+        <!--Score board for user and computer score and a random image also-->
+        <div class="score-board">
+            <div class="user-score">
+                <div class="userImgbox">
+                    <img id="userImg" src="">
+                    <p id="user-score">0</p>
+                </div>
+                <p id="displayName">User Score</p>
+            </div>
+            <div class="comp-score">
+                <div class="compImgbox">
+                    <img id="compImg" src="">
+                  <p id="comp-score">0</p>
+                </div>
+                <p>Comp Score</p>
+            </div>
+        </div>
+        <!--Buttons on main game window for reset and finish game-->
+        <div class="button-box">
+            <button id="resetBtn">Reset</button>
+            <button id="finishBtn">Finish</button>
+        </div>
+        <!--main msg box to show status of winner-->
+        <div class="msg-box">
+            <p id="msg-box">Play Your Move</p>
+        </div>
+    </div><!--game container closing tag-->
+    <!--End game container to show final result-->
+    <div class="end-game-container">
+            <p id="finalMsg">Congratulations</p>
+            <p id="txt">Final Score Board</p>
+             <div class="final-score-board">
+            <div class="final-user-score">
+                <p id="final-user-score">0</p>
+                <p id="finaldisplayName">User Score</p>
+            </div>
+            <div class="final-comp-score">
+                <p id="final-comp-score">0</p>
+                <p>Comp Score</p>
+            </div>
+        </div>
+        <div class="end-box-btns">
+        <button id="playAgain">Play Again</button>
+        <button id="gameShutdown">Exit</button>
+        </div>
+        </div> <!--End game container closing tag-->
+    <script src="script.js"></script><!--Adding script tag-->
+</body>
+</html>
